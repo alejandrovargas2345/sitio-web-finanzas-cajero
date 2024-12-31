@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Finanzas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+    </style>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-light shadow-sm">
+        <nav class="navbar navbar-light container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="assest/CAM caja de ahorro ministerial.jpeg" alt="Logo Finanzas" width="150">
+            </a>
+            <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png" alt="Menu Icon">
+            </button>
+            <ul class="navbar-nav d-none d-lg-flex flex-row gap-3 align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicio">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-warning">Acceso clientes</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <ul class="navbar-nav flex-column text-center gap-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+            <button class="btn btn-warning w-100 mt-3">Acceso clientes</button>
+        </div>
+    </div>
+   
+ 
+
+
+
+  <!-- Hero Section with Image Slider -->
+<section class="hero text-center py-7" style="height: 600px; margin-bottom: 80px; position: relative;">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="hero-img" style="background-image: url('assest/atm-operation-bank.jpg'); height: 600px; background-size: cover; background-position: center;"></div>
+                <div class="overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 fw-bold text-white">¡Simplifica tus finanzas con nosotros!</h1>
+                    <p class="lead text-light">La mejor plataforma para gestionar tus finanzas desde cualquier lugar.</p>
+                    <button class="btn btn-light btn-lg">Ver promociones</button>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="hero-img" style="background-image: url('assest/female-staff-using-credit-card-terminal-cash-counter.jpg'); height: 600px; background-size: cover; background-position: center;"></div>
+                <div class="overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 fw-bold text-white">¡Simplifica tus finanzas con nosotros!</h1>
+                    <p class="lead text-light">La mejor plataforma para gestionar tus finanzas desde cualquier lugar.</p>
+                    <button class="btn btn-light btn-lg">Ver promociones</button>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="hero-img" style="background-image: url('assest/bank-atm-operation-enter-password.jpg'); height: 600px; background-size: cover; background-position: center;"></div>
+                <div class="overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 fw-bold text-white">¡Simplifica tus finanzas con nosotros!</h1>
+                    <p class="lead text-light">La mejor plataforma para gestionar tus finanzas desde cualquier lugar.</p>
+                    <button class="btn btn-light btn-lg">Ver promociones</button>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+                <div class="hero-img" style="background-image: url('assest/smiling-woman-withdrawing-money-from-cash-machine-while-using-smart-phone.jpg'); height: 600px; background-size: cover; background-position: center;"></div>
+                <div class="overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 fw-bold text-white">¡Simplifica tus finanzas con nosotros!</h1>
+                    <p class="lead text-light">La mejor plataforma para gestionar tus finanzas desde cualquier lugar.</p>
+                    <button class="btn btn-light btn-lg">Ver promociones</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+
+
+<style>
+    /* Animaciones individuales */
+    @keyframes slideInDown {
+        0% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInUp {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* Aplicar animaciones */
+    .navbar-brand {
+        animation: slideInDown 1s ease-in-out;
+    }
+
+    .navbar-nav .nav-item {
+        animation: slideInUp 1.2s ease-in-out;
+    }
+
+    .btn-outline-secondary {
+        animation: slideInUp 1.2s ease-in-out;
+    }
+
+    .carousel-caption h1 {
+        animation: slideInDown 1.5s ease-in-out;
+    }
+
+    .carousel-caption p {
+        animation: fadeIn 1.8s ease-in-out;
+    }
+
+    .carousel-caption button {
+        animation: slideInUp 2s ease-in-out;
+    }
+
+    /* Asegurar centrado del carrusel */
+    .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap JS and CSS for Carousel -->
+
+
+<style>
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+        z-index: 1;
+    }
+
+    .carousel-caption {
+        z-index: 2; /* Ensure text and button appear above overlay */
+        position: absolute;
+        top: 35%; /* Moves the caption 35% from the top */
+        left: 50%;
+        transform: translateX(-50%); /* Centers the content horizontally */
+        color: white;
+        text-align: center;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2.5rem; /* Slightly reduced size */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+    }
+
+    .carousel-caption p {
+        font-size: 1.125rem; /* Slightly smaller paragraph */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-caption button {
+        font-size: 1.125rem;
+        padding: 10px 20px;
+        text-transform: uppercase;
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+        .carousel-caption h1 {
+            font-size: 2rem; /* Smaller title on mobile */
+        }
+
+        .carousel-caption p {
+            font-size: 1rem; /* Smaller paragraph on mobile */
+        }
+
+        .carousel-caption button {
+            font-size: 1rem;
+            padding: 8px 16px; /* Smaller button */
+        }
+    }
+
+    @media (max-width: 576px) {
+        .carousel-caption h1 {
+            font-size: 1.5rem; /* Even smaller title on very small screens */
+        }
+
+        .carousel-caption p {
+            font-size: 0.9rem; /* Even smaller paragraph on very small screens */
+        }
+
+        .carousel-caption button {
+            font-size: 0.9rem;
+            padding: 6px 12px; /* Even smaller button */
+        }
+    }
+
+    /* Ensure proper visibility on mobile (especially Android) */
+    .carousel-caption h1, .carousel-caption p, .carousel-caption button {
+        z-index: 3; /* Ensure they are above the overlay */
+    }
+</style>
+
+
+
+
+<!--seccion de servicios-->
+
+
+<section class="container py-5">
+    <h2 class="text-center fw-bold text-primary mb-4">Cajero de Ahorro Ministerial</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Servicios -->
+        <div class="col">
+            <div class="card service-card text-center shadow-lg p-4">
+                <div class="icon-wrapper mb-3">
+                    <i class="bx bx-wallet-alt"></i>
+                </div>
+                <h5 class="card-title">Ahorros y Depósitos</h5>
+                <p class="card-text">Facilitamos el depósito de tus ahorros en cualquier momento, garantizando la seguridad de tu dinero.</p>
+                <a href="#" class="btn btn-outline-primary">Acceder</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card service-card text-center shadow-lg p-4">
+                <div class="icon-wrapper mb-3">
+                    <i class="bx bx-transfer-alt"></i>
+                </div>
+                <h5 class="card-title">Retiros y Transferencias</h5>
+                <p class="card-text">Realiza retiros y transferencias de forma rápida y segura a cualquier banco o cuenta asociada.</p>
+                <a href="#" class="btn btn-outline-primary">Acceder</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card service-card text-center shadow-lg p-4">
+                <div class="icon-wrapper mb-3">
+                    <i class="bx bx-search-alt"></i>
+                </div>
+                <h5 class="card-title">Consultas de Saldo</h5>
+                <p class="card-text">Consulta tu saldo de manera inmediata, asegurando una visión clara de tus ahorros y movimientos.</p>
+                <a href="#" class="btn btn-outline-primary">Acceder</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card service-card text-center shadow-lg p-4">
+                <div class="icon-wrapper mb-3">
+                    <i class="bx bx-credit-card"></i>
+                </div>
+                <h5 class="card-title">Servicios de Pago</h5>
+                <p class="card-text">Paga tus facturas y servicios de manera eficiente a través de nuestra plataforma de pagos en línea.</p>
+                <a href="#" class="btn btn-outline-primary">Acceder</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card service-card text-center shadow-lg p-4">
+                <div class="icon-wrapper mb-3">
+                    <i class="bx bx-briefcase-alt"></i>
+                </div>
+                <h5 class="card-title">Asesoría Financiera</h5>
+                <p class="card-text">Recibe asesoramiento personalizado para optimizar el manejo de tus finanzas personales y empresariales.</p>
+                <a href="#" class="btn btn-outline-primary">Acceder</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card service-card text-center shadow-lg p-4">
+                <div class="icon-wrapper mb-3">
+                    <i class="bx bx-mobile-alt"></i>
+                </div>
+                <h5 class="card-title">Aplicación Móvil</h5>
+                <p class="card-text">Accede a todos nuestros servicios a través de nuestra app móvil para gestionar tus finanzas de forma conveniente.</p>
+                <a href="#" class="btn btn-outline-primary">Acceder</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Animación de entrada */
+    @keyframes fadeInUp {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* Animación de título */
+    @keyframes slideIn {
+        0% {
+            transform: translateX(-30px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* Animación de los servicios */
+    .service-card {
+        animation: fadeInUp 1.2s ease-in-out;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+
+    /* Animación escalonada */
+    .service-card:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    .service-card:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    .service-card:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+    .service-card:nth-child(4) {
+        animation-delay: 0.8s;
+    }
+
+    .service-card:nth-child(5) {
+        animation-delay: 1s;
+    }
+
+    .service-card:nth-child(6) {
+        animation-delay: 1.2s;
+    }
+
+    /* Título */
+    h2.text-center {
+        animation: slideIn 1s ease-in-out;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+</style>
+
+
+
+<div class="container">
+    <!-- Sección con imagen a la izquierda y texto a la derecha -->
+    <div class="row align-items-center seccion">
+        <div class="col-md-6">
+            <img src="assest/images (1).jpg" alt="Imagen atractiva" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <h2 class="fw-bold">ACERCA DE NOSOTROS</h2>
+            <p class="texto">
+                La Caja de Ahorro Ministerial (CAM) fue creada para promover la solidaridad financiera entre los ministros del Evangelio, ofreciendo soluciones de ahorro y financiamiento accesibles. Su propósito es garantizar la sostenibilidad financiera del ministerio, apoyando a quienes sirven en la Iglesia.
+            </p>
+            <p class="texto">
+                Desde su creación en 2024, la CAM ha sido un pilar de apoyo para los ministros y sus familias, promoviendo valores como la generosidad, la mayordomía y el bienestar integral.
+            </p>
+            <a href="historia.html" class="btn btn-leer">Leer Más</a>
+        </div>
+    </div>
+</div>
+
+<!-- Estilos CSS -->
+<style>
+    .seccion {
+        background: linear-gradient(135deg, rgba(255, 0, 150, 0.1), rgba(0, 204, 255, 0.1));
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        margin-bottom: 50px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .seccion:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .seccion img {
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        max-width: 100%; /* Asegura que no se desborde en pantallas pequeñas */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: 80%; /* Aumenta el tamaño de la imagen */
+    display: block; /* Centra la imagen dentro del contenedor */
+    margin: 0 auto;
+    }
+
+    .seccion img:hover {
+        transform: scale(1.05);
+    }
+
+    .texto {
+        color: #333;
+        font-size: 1.1rem;
+        margin-top: 15px;
+        line-height: 1.6;
+    }
+
+    .btn-leer {
+        margin-top: 15px;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-leer:hover {
+        background-color: #0056b3;
+        color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+        .seccion {
+            text-align: center;
+        }
+
+        .seccion img {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+</style>
+
+<style>
+    /* Animación de entrada desde la izquierda */
+    @keyframes fadeInLeft {
+        0% {
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* Animación de entrada desde la derecha */
+    @keyframes fadeInRight {
+        0% {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* Estilo de la imagen */
+    .seccion .col-md-6 img {
+        animation: fadeInLeft 1.2s ease-in-out;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+
+    /* Estilo del texto */
+    .seccion .col-md-6 h2,
+    .seccion .col-md-6 p,
+    .seccion .col-md-6 .btn-leer {
+        animation: fadeInRight 1.2s ease-in-out;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+
+    /* Retardo para los elementos de texto */
+    .seccion .col-md-6 h2 {
+        animation-delay: 0.3s;
+    }
+
+    .seccion .col-md-6 p {
+        animation-delay: 0.5s;
+    }
+
+    .seccion .col-md-6 .btn-leer {
+        animation-delay: 0.7s;
+    }
+
+    /* Botón personalizado */
+    .btn-leer {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-leer:hover {
+        background-color: #0056b3;
+        color: #fff;
+        transform: scale(1.1);
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  seccion de promociones de cajero ahorro ministerial (CAM)-->
+
+<!-- Sección de Promociones de Cajero Ahorro Ministerial (CAM) -->
+<section class="promociones-cajero py-5">
+    <div class="container text-center">
+        <h2 class="titulo-promociones">Promociones Exclusivas del Cajero</h2>
+        <p class="descripcion-promociones">
+            Aprovecha las mejores ofertas y beneficios diseñados para ti.
+        </p>
+        <div class="row g-4 mt-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tarjeta-promocion card h-100">
+                    <img src="assest/4725542_45103.jpg" class="card-img-top" alt="Depósitos Seguros">
+                    <div class="card-body">
+                        <h3 class="card-title">Depósitos con Beneficios</h3>
+                        <p class="card-text">Recibe un 15% adicional en intereses al realizar depósitos automáticos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tarjeta-promocion card h-100">
+                    <img src="assest/human-technology-dark-skinned-man-using-atm-black-guy-s-hand-inserting-plastic-bank-card-into-cash-dispenser-atm-machine.jpg" class="card-img-top" alt="Retiros Gratis">
+                    <div class="card-body">
+                        <h3 class="card-title">Retiros Gratis</h3>
+                        <p class="card-text">Disfruta de retiros sin comisión durante tus primeros 6 meses de uso.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tarjeta-promocion card h-100">
+                    <img src="assest/DALL·E 2024-12-30 16.19.26 - A realistic and detailed image of a standard ATM machine with a focus on registration features. The ATM has a clean and modern design, showing a scree.webp" class="card-img-top" alt="Bonos Especiales">
+                    <div class="card-body">
+                        <h3 class="card-title">Bonos por Registro</h3>
+                        <p class="card-text">Obtén hasta $100 de bonificación al registrarte y usar el cajero por primera vez.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    /* Estilos Generales */
+    .promociones-cajero {
+        padding: 50px 20px;
+        background: linear-gradient(145deg, #1d3557, #457b9d);
+        font-family: 'Arial', sans-serif;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .contenedor-promociones {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .titulo-promociones {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .descripcion-promociones {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+    
+    /* Estilo de Tarjetas */
+    .tarjeta-promocion {
+        background: #ffffff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        color: #333;
+        text-align: left;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .tarjeta-promocion:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .tarjeta-promocion img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .tarjeta-promocion h3 {
+        font-size: 1.5rem;
+        margin: 15px 20px 10px;
+        color: #1d3557;
+    }
+    
+    .tarjeta-promocion p {
+        font-size: 1rem;
+        margin: 0 20px 20px;
+        color: #555;
+        line-height: 1.5;
+    }
+    
+    /* Media Queries para Ajustar Texto */
+    @media (max-width: 768px) {
+        .titulo-promociones {
+            font-size: 2rem;
+        }
+    
+        .descripcion-promociones {
+            font-size: 1rem;
+        }
+    
+        .tarjeta-promocion h3 {
+            font-size: 1.2rem;
+        }
+    
+        .tarjeta-promocion p {
+            font-size: 0.9rem;
+        }
+    }
+    </style>
+    
+
+
+
+
+    <div class="faq-container">
+        <h2 class="faq-title">Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>¿Qué es la Caja de Ahorro Ministerial (CAM)?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                    La CAM es una institución creada para promover la solidaridad financiera entre los ministros del Evangelio, ofreciendo soluciones de ahorro y financiamiento accesibles.
+                </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>¿Cómo puedo unirme a la CAM?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                    Puedes unirte contactando a nuestro equipo y llenando los formularios necesarios. Consulta nuestra página de membresía para más detalles.
+                </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>¿Qué beneficios ofrece la CAM?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>
+                    Ofrecemos servicios como préstamos accesibles, educación financiera y programas de apoyo diseñados para mejorar la calidad de vida de nuestros socios.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Estilos CSS -->
+    <style>
+        .faq-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #e0f7fa, #fff);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    
+        .faq-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+    
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        .faq-item:hover {
+            background-color: #f0f8ff;
+        }
+    
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #333;
+        }
+    
+        .faq-icon {
+            font-size: 1.5rem;
+            color: #007bff;
+            transition: transform 0.3s ease;
+        }
+    
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 15px;
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+    
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+    
+        .faq-item.active .faq-answer {
+            max-height: 150px; /* Ajusta según el contenido */
+            padding: 10px 15px;
+        }
+    </style>
+    
+    <!-- JavaScript -->
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                // Cerrar otras respuestas abiertas
+                document.querySelectorAll('.faq-item.active').forEach(activeItem => {
+                    if (activeItem !== item) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+                // Alternar la clase "active" para mostrar/ocultar la respuesta
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+    
+
+
+
+
+
+  
+
+<section id="productos" class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col">
+                <h2 class="display-4 text-dark fw-bold">Nuestros Productos</h2>
+                <p class="lead text-muted">Encuentra la mejor selección de productos diseñados para mejorar tu experiencia financiera.</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <!-- Producto 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card shadow border-0">
+                    <div class="product-image">
+                        <img src="d:\Landing Page Finanzas\assest\fotos_productos\5141498_51033.jpg" class="card-img-top" alt="Producto Premium">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Producto Premium</h5>
+                        <p class="card-text text-muted">Un producto exclusivo con características avanzadas que garantizan la mejor calidad.</p>
+                        <a href="#" class="btn btn-outline-primary rounded-pill px-4">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card shadow border-0">
+                    <div class="product-image">
+                        <img src="d:\Landing Page Finanzas\assest\fotos_productos\6850797_28212.jpg" class="card-img-top" alt="Producto Estándar">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Producto Estándar</h5>
+                        <p class="card-text text-muted">La elección perfecta para quienes buscan un equilibrio entre calidad y precio.</p>
+                        <a href="#" class="btn btn-outline-primary rounded-pill px-4">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card shadow border-0">
+                    <div class="product-image">
+                        <img src="d:\Landing Page Finanzas\assest\fotos_productos\8511909_3921879.jpg" class="card-img-top" alt="Producto Básico">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Producto Básico</h5>
+                        <p class="card-text text-muted">La solución ideal para quienes buscan productos esenciales y confiables.</p>
+                        <a href="#" class="btn btn-outline-primary rounded-pill px-4">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    /* Animación de desvanecimiento y desplazamiento hacia arriba */
+    @keyframes fadeInUp {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* Estilo de la sección de productos */
+    #productos .product-card {
+        animation: fadeInUp 1s ease-in-out;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+
+    /* Retardo progresivo para cada tarjeta */
+    #productos .col-lg-4:nth-child(1) .product-card {
+        animation-delay: 0.2s;
+    }
+
+    #productos .col-lg-4:nth-child(2) .product-card {
+        animation-delay: 0.4s;
+    }
+
+    #productos .col-lg-4:nth-child(3) .product-card {
+        animation-delay: 0.6s;
+    }
+
+    /* Botón personalizado */
+    .btn-outline-primary {
+        border-color: #007bff;
+        color: #007bff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    /* Efecto de sombra en hover para las tarjetas */
+    .product-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Imagen del producto */
+    .product-card .product-image img {
+        border-radius: 0.5rem;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .product-card:hover .product-image img {
+        transform: scale(1.1);
+    }
+</style>
+
+
+
+<!-- Sección de imagen como enlace a la izquierda y texto con chulitos a la derecha -->
+<section class="features-section py-5" style="background-color: #ffffff;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Columna izquierda: Imagen como enlace -->
+        <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+          <a href="tu-enlace-google-play.html">
+            <img src="assest/disponible-en-google-play-badge-1.png" alt="Google Play Badge" class="img-fluid sombra redondeada mb-3">
+          </a>
+          <a href="tu-enlace-app-store.html">
+            <img src="assest/images.png" alt="Insignia de la App Store" class="img-fluid sombra redondeada">
+          </a>
+        </div>
+        <!-- Columna derecha: Texto con chulitos -->
+        <div class="col-12 col-md-6">
+          <h2 class="mb-4">¿Por qué elegirnos?</h2>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bx bx-check-circle text-success"></i> <strong>Servicio rápido</strong> - Entregamos resultados en tiempo récord.</li>
+            <li class="mb-2"><i class="bx bx-check-circle text-success"></i> <strong>Soporte 24/7</strong> - Estamos disponibles para ayudarte en cualquier momento.</li>
+            <li class="mb-2"><i class="bx bx-check-circle text-success"></i> <strong>Seguro y confiable</strong> - Protegemos tus datos con las mejores medidas de seguridad.</li>
+            <li class="mb-2"><i class="bx bx-check-circle text-success"></i> <strong>Facilidad de uso</strong> - Nuestra plataforma es intuitiva y fácil de navegar.</li>
+          </ul>
+          <div class="mt-4">
+            <h3>CONTÁCTENOS</h3>
+            <p>Escríbenos y uno de nuestros asesores te brindará atención eficaz y personalizada.</p>
+            <p><strong>WHATSAPP: </strong>0959040579</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Estilos CSS -->
+  <style>
+    .features-section {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .features-section h2 {
+      font-size: 2rem;
+      color: #333;
+      font-weight: bold;
+    }
+    .features-section ul {
+      padding-left: 20px;
+    }
+    .features-section ul li {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+    }
+    .features-section ul li i {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+    .features-section img {
+      max-width: 200px; /* Tamaño máximo de las insignias */
+      margin: 0 auto; /* Centrado */
+      display: block;
+    }
+    /* Responsividad */
+    @media (max-width: 768px) {
+      .features-section img {
+        max-width: 150px; /* Tamaño reducido en dispositivos pequeños */
+      }
+    }
+  </style>
+  
+
+<!-- Boxicons -->
+<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="footer">
+    <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+            <!-- Sección izquierda: Logo y descripción -->
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <img src="assest/WhatsApp Image 2024-12-23 at 14.22.57.png" alt="Logo de la Empresa" class="img-fluid logo-footer mb-3">
+                <p class="text-dark mb-0">Tu aliado para gestionar tus finanzas con facilidad y seguridad. Aprende más sobre nuestros servicios.</p>
+            </div>
+            
+            <!-- Sección central: Enlaces rápidos -->
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
+                <h5 class="text-dark">Enlaces rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark">Inicio</a></li>
+                    <li><a href="#" class="text-dark">Servicios</a></li>
+                    <li><a href="#" class="text-dark">Nosotros</a></li>
+                    <li><a href="#" class="text-dark">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <!-- Sección derecha: Redes sociales y contacto -->
+            <div class="col-12 col-md-3 text-md-end">
+                <h5 class="text-dark">Síguenos</h5>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Derechos reservados -->
+        <div class="row">
+            <div class="col-12 text-center mt-4">
+                <p class="text-dark mb-0">&copy; 2024 CAM. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Estilo CSS -->
+<style>
+    /* Estilo general del footer */
+    footer {
+        background-color: #ffffff;
+        color: #000000;
+        font-family: 'Arial', sans-serif;
+        border-top: 4px solid #356dad;
+    }
+
+    footer .logo-footer {
+        max-width: 150px;
+    }
+
+    footer h5 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #000000;
+    }
+
+    footer a {
+        color: #000000;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #ff5733;
+        transform: translateX(5px);
+    }
+
+    footer p {
+        color: #000000;
+    }
+
+    footer .social-icons {
+        margin-top: 20px;
+    }
+
+    footer .social-icon {
+        color: #000000;
+        font-size: 28px;
+        margin-right: 20px;
+        transition: color 0.3s ease;
+    }
+
+    footer .social-icon:hover {
+        color: #ff5733;
+        transform: translateY(-5px);
+    }
+
+    footer .btn-light {
+        background-color: transparent;
+        border: 2px solid #ff5733;
+        color: #ff5733;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    footer .btn-light:hover {
+        background-color: #ff5733;
+        color: rgb(0, 0, 0);
+    }
+
+    /* Derechos reservados */
+    footer .row p {
+        font-size: 0.9rem;
+        color: #000000;
+    }
+
+    /* Responsividad */
+    @media (max-width: 768px) {
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+        }
+        footer .social-icon {
+            margin: 0 10px;
+        }
+    }
+</style>
+
+
+<!-- Boxicons para los íconos -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+ 
+
+
+
+
+
+<!-- Bootstrap JS y CSS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script src="index.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

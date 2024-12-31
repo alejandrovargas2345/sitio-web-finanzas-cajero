@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>historia</title>
+
+
+<!--estilos nunito sans-->
+
+
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+    
+
+
+</style>
+
+    <!--link de accesos a diseño bootstrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+
+     <!-- Header -->
+     <header class="bg-light shadow-sm">
+        <nav class="navbar navbar-light container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="Index.html">
+                <img src="assest/CAM caja de ahorro ministerial.jpeg" alt="Logo Finanzas" width="150">
+            </a>
+            <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png" alt="Menu Icon">
+            </button>
+            <ul class="navbar-nav d-none d-lg-flex flex-row gap-3 align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicio">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-warning">Acceso clientes</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <STyle>
+        /* Estilo global */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 300;
+   
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón hamburguesa */
+.btn-outline-secondary {
+    border: none;
+    background: transparent;
+    padding: 5px 10px;
+}
+
+.btn-outline-secondary img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-outline-secondary:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
+    </STyle>
+
+
+
+
+<!--secciones para la pagina -->
+
+ <!-- Offcanvas Menu -->
+ <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+        <ul class="navbar-nav flex-column text-center gap-3">
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+        </ul>
+        <button class="btn btn-warning w-100 mt-3">Acceso clientes</button>
+    </div>
+</div>
+
+<style>
+
+/* Botón hamburguesa */
+.btn-outline-secondary {
+    border: none;
+    background: transparent;
+    padding: 5px 10px;
+}
+
+.btn-outline-secondary img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-outline-secondary:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* Offcanvas Menu */
+.offcanvas {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.offcanvas-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: #333 !important;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.btn-warning {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 34px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-warning:hover {
+    background-color: #007bff !important;
+}
+
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+</style>
+
+
+
+
+<section style="font-family: 'Nunito Sans', sans-serif; line-height: 1.8; margin: 0 auto; max-width: 800px; padding: 20px;">
+    <h2 style="text-align: center; margin-bottom: 30px;">Historia</h2>
+  
+    <p style="text-align: justify;">
+      A lo largo de los años, los líderes han enfrentado desafíos económicos que revelaron la necesidad de un sistema de ahorro solidario, el cual la Honorable Junta Administrativa del periodo 2023-2025, vio la necesidad de delegar una comisión para el estudio de un nuevo proyecto del 5%.
+    </p>
+  
+    <p style="text-align: justify;">
+      Este proyecto fue integrado por:
+    </p>
+  
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="margin-bottom: 10px;">Presidente: Obispo. Milton García</li>
+      <li style="margin-bottom: 10px;">Secretario: Supervisor. Arbey Sánchez</li>
+      <li style="margin-bottom: 10px;">Financiero: Supervisor. Ernesto Suarez</li>
+      <li style="margin-bottom: 10px;">Jurídico: Abogado. Ronald Valencia</li>
+      <li style="margin-bottom: 10px;">Técnico: Pastor. Ronald Varela y Pastor. Otto Carlos</li>
+    </ul>
+  
+    <p style="text-align: justify;">
+      Este equipo de trabajo presenta el proyecto de la caja de ahorro a la H. J.A y es aprobada en primera instancia y el 20 de junio del 2024 en segunda instancia por la asamblea nacional de ministros en el Campamento Apostólico de Santo Domingo, con un 84,29% de los votos, el nuevo proyecto de ahorro del 5% y el inicio de la formación de la Caja de Ahorro Ministerial CAM.
+    </p>
+  
+    <p style="text-align: justify;">
+      Este acuerdo marcó el inicio de una reforma que busca garantizar la sostenibilidad financiera del ministerio en el tiempo presente. La Caja de Ahorro Ministerial (CAM) representa el fruto de una visión profundamente arraigada en los valores bíblicos como la mayordomía, la generosidad y el cuidado mutuo (Gálatas 6:2) y en el compromiso de la Iglesia con el bienestar integral de sus ministros y comunidades.
+    </p>
+  
+    <p style="text-align: justify;">
+      Desde su creación, la CAM se ha erigido como un baluarte de solidaridad y sostenibilidad, una respuesta tangible a las necesidades económicas y financieras de quienes dedican sus vidas al servicio de Dios en el ministerio.
+    </p>
+  
+    <p style="text-align: justify;">
+      Hoy, la CAM continúa siendo un testimonio vivo de fe y solidaridad, promoviendo el bienestar de quienes dedican sus vidas al servicio del Evangelio. Es mucho más que una herramienta financiera: es un pilar de apoyo, un acto de esperanza y un legado espiritual que une generaciones al servicio de Dios, es una expresión viva de la fe en acción y un ejemplo de cómo la Iglesia puede construir puentes entre la espiritualidad y la sostenibilidad.
+    </p>
+  
+    <p style="text-align: justify;">
+      Con el pasar de los años, la CAM ha evolucionado, adoptando herramientas tecnológicas que facilitan la transparencia y la gestión eficiente de los recursos.
+    </p>
+  
+    <h3 style="text-align: center; margin-top: 40px;">Objetivos Fundamentales del CAM</h3>
+  
+    <ol style="text-align: justify; padding-left: 20px;">
+      <li style="margin-bottom: 10px;">Fomentar la disciplina financiera: Ayudando a los ministros a cultivar hábitos de ahorro responsables para que haga uso el día de uso de buen retiro.</li>
+      <li style="margin-bottom: 10px;">Brindar acceso a financiamiento justo: Ofreciendo préstamos accesibles para emergencias, proyectos personales y ministeriales.</li>
+      <li style="margin-bottom: 10px;">Fortalecer la unidad comunitaria: Promoviendo la solidaridad y el sentido de pertenencia entre los líderes religiosos.</li>
+    </ol>
+  
+    <h3 style="text-align: center; margin-top: 40px;">La Comisión Delegada por la HJA</h3>
+  
+    <p style="text-align: justify;">
+      <strong>Misión:</strong> Promover el hábito del ahorro en el ministro y familia, a través de la inclusión financiera y educación en el manejo responsable de las finanzas. Acompañando el desarrollo de nuestros socios, sus negocios y nuevos emprendimientos, brindando las mejores soluciones financieras, a través de talentos que han recibido capacitación de largo plazo en tecnologías de punta, manteniéndonos fieles a nuestros principios y valores, practicando el cooperativismo y buscando el máximo beneficio económico. Satisfacer sus expectativas y necesidades y retribuir a la sociedad, beneficiando a los socios y las comunidades.
+    </p>
+  
+    <p style="text-align: justify;">
+      <strong>Visión:</strong> Ser la Caja de Ahorro de segmento uno con la mayor eficiencia financiera y social. La Caja de Ahorro de preferencia del ministro y la comunidad apostólica, para alcanzar sus anhelos, ofreciéndole soluciones innovadoras y experiencias memorables.
+    </p>
+  
+    <h3 style="text-align: center; margin-top: 40px;">Valores y Principios</h3>
+  
+    <ul style="text-align: justify; list-style-type: disc; padding-left: 20px;">
+      <li style="margin-bottom: 10px;">Compromiso y pasión por el cliente</li>
+      <li style="margin-bottom: 10px;">Transparencia e integridad en nuestras acciones</li>
+      <li style="margin-bottom: 10px;">Innovación y calidad de servicio</li>
+      <li style="margin-bottom: 10px;">Sostenibilidad</li>
+      <li style="margin-bottom: 10px;">Crecimiento Profesional</li>
+      <li style="margin-bottom: 10px;">Comunicación y trabajo en equipo</li>
+    </ul>
+  
+    <h3 style="text-align: center; margin-top: 40px;">Nuestra Institución</h3>
+  
+    <p style="text-align: justify;">
+      Somos una institución financiera con credibilidad, confianza y responsabilidad social, que practica la democracia participativa guiada por un equipo humano, responsable, honesto, comprometido e innovador.
+    </p>
+  
+    <p style="text-align: justify;">
+      <strong>Propósito:</strong> “Mejorar la calidad de vida de nuestros socios, conectándolos al sector productivo del país, fomentando el desarrollo sostenible y el cuidado del medio ambiente”.
+    </p>
+  
+    <p style="text-align: justify;">
+      <strong>Objetivo estratégico:</strong> Al 2025, La Cooperativa de Ahorro y Crédito La Dolorosa Ltda. tiene como objetivo ser la mejor opción como proveedor de productos y servicios financieros del sector Cooperativo en beneficio de nuestros Comerciantes, Asalariados y Jubilados que residen o laboran en la ciudad de Duran con una movilidad laboral desde/hacia la ciudad de Guayaquil.
+    </p>
+  
+    <h3 style="text-align: center; margin-top: 40px;">Transparencia y Confianza</h3>
+  
+    <p style="text-align: justify;">
+      Nuestro compromiso es brindarle un acceso claro y directo a la información que respalda nuestra solidez financiera y la confianza que depositan en nosotros.
+    </p>
+  
+    <h3 style="text-align: center; margin-top: 40px;">Seguridad</h3>
+  
+    <p style="text-align: justify;">
+      Con la finalidad de informar y capacitar a nuestros socios, en temas de buenas prácticas en el USO DE CANALES ELECTRÓNICOS, se pone a disposición documentos que contienen recomendaciones del uso de:
+    </p>
+  
+    <ul style="text-align: justify; list-style-type: disc; padding-left: 20px;">
+      <li style="margin-bottom: 10px;">Cajeros Automáticos</li>
+      <li style="margin-bottom: 10px;">Tarjetas de Débito</li>
+      <li style="margin-bottom: 10px;">Cuentas digital & app</li>
+      <li style="margin-bottom: 10px;">Agencias</li>
+    </ul>
+  </section>
+  
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+            <!-- Sección izquierda: Logo y descripción -->
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <img src="assest/WhatsApp Image 2024-12-23 at 14.22.57.png" alt="Logo de la Empresa" class="img-fluid logo-footer mb-3">
+                <p class="text-light mb-0">Tu aliado para gestionar tus finanzas con facilidad y seguridad. Aprende más sobre nuestros servicios.</p>
+            </div>
+            
+            <!-- Sección central: Enlaces rápidos -->
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
+                <h5 class="text-white">Enlaces rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Inicio</a></li>
+                    <li><a href="#" class="text-light">Servicios</a></li>
+                    <li><a href="#" class="text-light">Nosotros</a></li>
+                    <li><a href="#" class="text-light">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <!-- Sección derecha: Redes sociales y contacto -->
+            <div class="col-12 col-md-3 text-md-end">
+                <h5 class="text-white">Síguenos</h5>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bx bxl-linkedin"></i></a>
+                </div>
+               
+            </div>
+        </div>
+        
+        <!-- Derechos reservados -->
+        <div class="row">
+            <div class="col-12 text-center mt-4">
+                <p class="text-light mb-0">&copy; 2024 CAM. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Estilo CSS -->
+<style>
+    /* Estilo general del footer */
+    footer {
+        background-color: #2c3e50; /* Fondo gris oscuro */
+        color: #bfbfbf;
+        font-family: 'Arial', sans-serif;
+        border-top: 4px solid #243e58;
+    }
+
+    footer .logo-footer {
+        max-width: 150px;
+    }
+
+    footer h5 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    footer a {
+        color: #bfbfbf;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #ff5733;
+        transform: translateX(5px);
+    }
+
+    footer .social-icons {
+        margin-top: 20px;
+    }
+
+    footer .social-icon {
+        color: #bfbfbf;
+        font-size: 28px;
+        margin-right: 20px;
+        transition: color 0.3s ease;
+    }
+
+    footer .social-icon:hover {
+        color: #ff5733;
+        transform: translateY(-5px);
+    }
+
+    footer .btn-light {
+        background-color: transparent;
+        border: 2px solid #ff5733;
+        color: #ff5733;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    footer .btn-light:hover {
+        background-color: #ff5733;
+        color: white;
+    }
+
+    /* Derechos reservados */
+    footer .row p {
+        font-size: 0.9rem;
+        color: #bfbfbf;
+    }
+
+    /* Responsividad */
+    @media (max-width: 768px) {
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+        }
+        footer .social-icon {
+            margin: 0 10px;
+        }
+    }
+</style>
+
+
+
+
+<!-- Boxicons para los íconos -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  
+<script>
+    
+// Seleccionar los elementos
+const toggleButton = document.getElementById('toggleMenu');
+const offcanvasMenu = document.getElementById('offcanvasMenu');
+const closeButton = document.querySelector('.btn-close');
+
+// Función para alternar el menú
+toggleButton.addEventListener('click', () => {
+    offcanvasMenu.classList.toggle('show');
+    document.body.classList.toggle('offcanvas-backdrop'); // Agrega o quita el fondo oscuro
+});
+
+// Cerrar el menú al presionar el botón de cerrar
+closeButton.addEventListener('click', () => {
+    offcanvasMenu.classList.remove('show');
+    document.body.classList.remove('offcanvas-backdrop'); // Quita el fondo oscuro
+});
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+ 
+</body>
+</html>
